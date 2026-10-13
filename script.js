@@ -27,13 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateCalculator() {
     let upfront = 0;
     let monthly = 0;
-    let hasAddon = false;
 
-    if (optPkg1 && optPkg1.classList.contains('selected')) {
+    if (optPkg1 && (optPkg1.classList.contains('active') || optPkg1.classList.contains('selected'))) {
       upfront += 600;
     }
 
-    if (optPkg2 && optPkg2.classList.contains('selected')) {
+    if (optPkg2 && (optPkg2.classList.contains('active') || optPkg2.classList.contains('selected'))) {
       monthly += 108;
     }
 
@@ -43,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (monthlyDisplay) {
       if (monthly > 0) {
-        monthlyDisplay.innerHTML = `$${monthly} <span style="font-size: 0.85rem; color: #34d399;">/mo (All-Inclusive)</span>`;
+        monthlyDisplay.innerHTML = `$${monthly} <span style="font-size: 0.85rem; color: #166534; font-weight: 700;">/mo (All-Inclusive)</span>`;
       } else {
         monthlyDisplay.textContent = '$0/mo';
       }
@@ -53,10 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
   function setupToggle(el) {
     if (!el) return;
     el.addEventListener('click', () => {
+      el.classList.toggle('active');
       el.classList.toggle('selected');
-      const icon = el.querySelector('.custom-checkbox i');
+      const icon = el.querySelector('.checkbox-visual i, .custom-checkbox i');
       if (icon) {
-        if (el.classList.contains('selected')) {
+        if (el.classList.contains('active') || el.classList.contains('selected')) {
           icon.style.display = 'block';
         } else {
           icon.style.display = 'none';
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 4. Smooth scroll navigation spy
-  const navLinks = document.querySelectorAll('.nav-links a');
+  const navLinks = document.querySelectorAll('.subnav-list a, .nav-links a');
   const sections = document.querySelectorAll('section[id], div[id].section-target');
 
   window.addEventListener('scroll', () => {
