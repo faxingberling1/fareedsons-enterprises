@@ -26,11 +26,12 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
    git push -u origin main
    ```
 2. In your GitHub repository:
-   - Navigate to **Settings** > **Pages**.
+   - Navigate to **[Settings > Pages](https://github.com/faxingberling1/fareedsons-enterprises/settings/pages)**.
    - Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
    - Select Branch: `main` and folder `/ (root)`.
    - Click **Save**.
-3. Your proposal will be live at `https://<your-username>.github.io/<repo-name>/`.
+3. Your proposal will be live at:
+   👉 **[https://faxingberling1.github.io/fareedsons-enterprises/](https://faxingberling1.github.io/fareedsons-enterprises/)**
 
 ---
 
