@@ -1349,20 +1349,350 @@ a:hover {
   }
 }
 
-/* Responsive adjustments */
+/* Mobile Table Scroll Indicator Hint */
+.mobile-table-hint {
+  display: none;
+  font-size: 0.8rem;
+  color: var(--primary-blue);
+  background: var(--bg-blue-light);
+  border: 1px solid var(--border-blue);
+  padding: 0.45rem 0.95rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.65rem;
+  font-weight: 600;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   Comprehensive Mobile & Tablet Responsiveness
+   ========================================================================== */
+
+/* Tablet & Medium Screens (<= 900px) */
 @media (max-width: 900px) {
   .hero-main-title {
-    font-size: 2.25rem;
+    font-size: 2.35rem;
   }
-  .calc-flex-grid, .acceptance-row {
+  
+  .calc-flex-grid, 
+  .acceptance-row {
     grid-template-columns: 1fr;
-    gap: 1.75rem;
+    gap: 2rem;
   }
-  .hero-card, .acceptance-master-box {
-    padding: 2rem 1.5rem;
+  
+  .hero-card, 
+  .acceptance-master-box {
+    padding: 2.25rem 1.75rem;
   }
+  
   .features-grid-wrapper {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
+    padding: 1.75rem;
+  }
+
+  .package-top-banner {
+    padding: 1.75rem;
+  }
+}
+
+/* Mobile Devices (<= 768px) */
+@media (max-width: 768px) {
+  .mobile-table-hint {
+    display: inline-flex;
+  }
+
+  .table-card-wrap {
+    margin: 1rem 0;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .clean-table th, 
+  .clean-table td {
+    padding: 0.95rem 1rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* Small Mobile Screens (<= 640px) */
+@media (max-width: 640px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Header mobile collapse */
+  .top-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+  }
+
+  .header-right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .client-status-chip {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  .btn-sm {
+    padding: 0.38rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  /* Sticky subnav touch scroll */
+  .subnav-sticky {
+    top: 110px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .subnav-list a {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  /* Hero Section */
+  .hero-wrapper {
+    padding: 2rem 0 1.25rem;
+  }
+
+  .hero-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .hero-main-title {
+    font-size: 1.95rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .hero-friendly-text {
+    font-size: 0.98rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+  }
+
+  .client-meta-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+  }
+
+  .meta-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    font-size: 0.82rem;
+  }
+
+  .hero-mission-box {
+    padding: 1rem 1.15rem;
+    font-size: 0.92rem;
+  }
+
+  .perks-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .perk-item {
+    padding: 1rem;
+  }
+
+  /* Section Headers */
+  .section-padding {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .section-heading {
+    font-size: 1.75rem;
+  }
+
+  .section-subhead {
+    font-size: 0.95rem;
+  }
+
+  /* Package Cards */
+  .package-master-card {
+    border-radius: var(--radius-lg);
+  }
+
+  .package-top-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.15rem;
+    padding: 1.5rem 1.25rem;
+  }
+
+  .pkg-banner-left h3 {
+    font-size: 1.4rem;
+  }
+
+  .pkg-price-badge-box {
+    width: 100%;
+    min-width: unset;
+    text-align: left;
+    padding: 0.95rem 1.25rem;
+  }
+
+  .price-main-number {
+    font-size: 2.15rem;
+  }
+
+  .features-grid-wrapper {
+    padding: 1.25rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .feature-box {
+    padding: 1.25rem 1.1rem;
+  }
+
+  .feature-box-header h4 {
+    font-size: 1.08rem;
+  }
+
+  .feature-checklist li {
+    font-size: 0.88rem;
+    padding-left: 1.45rem;
+    margin-bottom: 0.55rem;
+  }
+
+  /* Social media chips */
+  .social-icons-showcase {
+    gap: 0.45rem;
+  }
+
+  .social-chip-vibrant {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.75rem;
+  }
+
+  /* Calculator on Mobile */
+  .calculator-box {
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-lg);
+    margin: 1.75rem 0;
+  }
+
+  .calc-toggle-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.15rem 1.25rem;
+  }
+
+  .toggle-price-pill {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0.55rem 1rem;
+  }
+
+  .calc-client-ad-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem 1.15rem;
+  }
+
+  .ad-banner-chip {
+    align-self: flex-start;
+  }
+
+  .calc-summary-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .stat-big-val {
+    font-size: 2.25rem;
+  }
+
+  /* Terms */
+  .terms-deck {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .term-bubble {
+    padding: 1.25rem 1.15rem;
+  }
+
+  /* Acceptance & Signature */
+  .acceptance-master-box {
+    padding: 1.75rem 1.25rem;
+    border-radius: var(--radius-lg);
+    margin: 2.5rem 0;
+  }
+
+  .acceptance-left-col h3 {
+    font-size: 1.85rem;
+  }
+
+  .signoff-form-box {
+    padding: 1.35rem 1.15rem;
+  }
+
+  .signature-pad-box {
+    min-height: 80px;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .signature-font-display {
+    font-size: 1.75rem;
+  }
+
+  .signature-empty-hint {
+    font-size: 0.78rem;
+  }
+
+  /* Footer */
+  .main-footer {
+    padding: 2.25rem 0 1.5rem;
+  }
+
+  .footer-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .footer-top-row > div:last-child {
+    text-align: left !important;
+  }
+}
+
+/* Extra Small Screens (<= 400px) */
+@media (max-width: 400px) {
+  .hero-main-title {
+    font-size: 1.75rem;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  .btn {
+    padding: 0.55rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .price-main-number {
+    font-size: 1.95rem;
   }
 }
