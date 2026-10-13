@@ -11,10 +11,10 @@
   <link rel="shortcut icon" type="image/jpeg" href="assets/logo.jpg">
   <link rel="apple-touch-icon" href="assets/logo.jpg">
 
-  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <!-- Google Fonts: Dancing Script (Cursive Signature), Outfit & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -627,64 +627,68 @@
         <table class="clean-table">
           <thead>
             <tr>
-              <th>Service Package</th>
-              <th>Investment</th>
-              <th>Billing Model</th>
-              <th>What Fareedsons Enterprises Gets</th>
+              <th style="min-width: 220px;">Service Pillar</th>
+              <th style="min-width: 140px;">Investment</th>
+              <th style="min-width: 150px;">Billing Cycle</th>
+              <th>What Fareedsons Enterprises Receives</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <strong>Custom Next.js Online Store</strong>
-                <div style="font-size: 0.78rem; color: var(--text-muted);">Package 1 Core</div>
+                <div class="matrix-pill-title">Custom Next.js Online Store</div>
+                <span class="matrix-sub">Package 1 Core</span>
               </td>
-              <td style="font-weight: 800; font-size: 1.2rem; color: var(--primary-blue);">$600</td>
-              <td><span class="badge-blue-pill">One-Time Setup</span></td>
+              <td>
+                <div class="matrix-price-tag">$600</div>
+                <span class="matrix-price-sub">Fixed Price</span>
+              </td>
+              <td><span class="badge-blue-pill"><i class="fa-solid fa-bolt"></i> One-Time</span></td>
               <td>Full custom online store, product catalog, cart, checkout, email alerts, Cloudflare SSL, hosting setup &amp; launch</td>
             </tr>
             <tr>
               <td>
-                <strong>4 Social Media Business Accounts</strong>
-                <div style="font-size: 0.78rem; color: var(--text-muted);">Included in Package 1</div>
+                <div class="matrix-pill-title">4 Social Media Business Accounts</div>
+                <span class="matrix-sub">Package 1 Included</span>
               </td>
-              <td><span style="color: #166534; font-weight: 800;">$0 (Included)</span></td>
-              <td><span class="badge-blue-pill">One-Time Setup</span></td>
+              <td>
+                <div class="matrix-price-tag green">$0</div>
+                <span class="matrix-price-sub">Included in $600</span>
+              </td>
+              <td><span class="badge-blue-pill"><i class="fa-solid fa-circle-check"></i> Included</span></td>
               <td>Facebook, Instagram, TikTok &amp; LinkedIn profiles configured with custom branded covers, bios &amp; store links</td>
             </tr>
             <tr>
               <td>
-                <strong>Website Maintenance</strong>
-                <div style="font-size: 0.78rem; color: var(--text-muted);">Package 2 Pillar</div>
+                <div class="matrix-pill-title">Website Maintenance</div>
+                <span class="matrix-sub">Package 2 Ongoing</span>
               </td>
-              <td rowspan="4" style="vertical-align: middle; font-weight: 800; font-size: 1.35rem; color: var(--primary-blue);">
-                $108<span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">/month</span>
+              <td rowspan="3" style="vertical-align: middle; background: #fafcff; border-left: 2px solid var(--border-blue); border-right: 2px solid var(--border-blue);">
+                <div class="matrix-price-tag">$108</div>
+                <span class="matrix-price-sub">Per Month</span>
+                <span class="matrix-all-inc-badge"><i class="fa-solid fa-infinity"></i> All-Inclusive</span>
               </td>
-              <td rowspan="4" style="vertical-align: middle;"><span class="badge-green-pill">All-Inclusive Monthly</span></td>
-              <td>Store health checks, text/image updates, price/product changes, small feature additions</td>
+              <td rowspan="3" style="vertical-align: middle; background: #fafcff; border-right: 2px solid var(--border-blue);">
+                <span class="badge-green-pill"><i class="fa-solid fa-arrows-rotate"></i> Monthly Retainer</span>
+                <span class="matrix-sub-note">Starts After Launch</span>
+              </td>
+              <td>Store health checks, text/image updates, price/product changes, minor feature additions (up to 3 hrs/mo)</td>
             </tr>
             <tr>
               <td>
-                <strong>Social Media Management</strong>
-                <div style="font-size: 0.78rem; color: var(--text-muted);">Package 2 Pillar</div>
+                <div class="matrix-pill-title">Social Media Management &amp; Community Care</div>
+                <span class="matrix-sub">Package 2 Ongoing</span>
               </td>
-              <td>Up to 8 static posts/mo, 4 stories/mo, captions, hashtags &amp; multi-channel scheduling</td>
+              <td>Up to 8 static posts/mo, 4 stories/mo, captions, hashtags, multi-channel scheduling &amp; direct message/comment replies</td>
             </tr>
             <tr>
               <td>
-                <strong>Community Care &amp; Message Replies</strong>
-                <div style="font-size: 0.78rem; color: var(--text-muted);">Package 2 Pillar</div>
-              </td>
-              <td>Comment and DM responses during business hours, direct inquiry routing, and monthly reports</td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Paid Social Media Ads (Package 3)</strong>
-                <div style="font-size: 0.78rem; color: #166534; font-weight: 700;">Package 3 (Included!)</div>
+                <div class="matrix-pill-title">Paid Social Ads Strategy (Package 3)</div>
+                <span class="matrix-sub" style="color: #166534; font-weight: 700;">Included in Retainer!</span>
               </td>
               <td>
-                <strong style="color: #166534;">Included in $108/mo Plan</strong>
-                <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 0.2rem;">Ad creative design, audience setup, split-testing &amp; optimization (Ad media budget funded directly by client)</div>
+                <strong style="color: #166534;"><i class="fa-solid fa-circle-check"></i> 100% Included in $108/mo Plan (Zero Agency Markups)</strong>
+                <div style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem;">Ad creative design, audience targeting, split-testing &amp; optimization. (Ad media budget funded directly by client)</div>
               </td>
             </tr>
           </tbody>
@@ -703,19 +707,22 @@
         <div class="calc-flex-grid">
           <div class="calc-toggles-col">
             
-            <!-- Toggle 1 -->
+            <!-- Toggle 1: Package 1 -->
             <div class="calc-toggle-item active" id="calcPkg1">
               <div class="toggle-info-group">
                 <div class="checkbox-visual"><i class="fa-solid fa-check"></i></div>
                 <div>
                   <div class="toggle-title-text">Package 1: Online Store &amp; 4 Social Pages</div>
-                  <div class="toggle-subtitle-text">Custom Next.js store, cart, checkout, email, Cloudflare &amp; social profiles</div>
+                  <div class="toggle-subtitle-text">Custom Next.js store, cart, checkout, email alerts, Cloudflare &amp; social profiles</div>
                 </div>
               </div>
-              <div class="toggle-price-text">$600 <span>one-time</span></div>
+              <div class="toggle-price-pill">
+                <span class="price-amount-bold">$600</span>
+                <span class="price-period-sub">One-Time</span>
+              </div>
             </div>
 
-            <!-- Toggle 2 -->
+            <!-- Toggle 2: Package 2 & 3 -->
             <div class="calc-toggle-item active" id="calcPkg2">
               <div class="toggle-info-group">
                 <div class="checkbox-visual"><i class="fa-solid fa-check"></i></div>
@@ -724,19 +731,20 @@
                   <div class="toggle-subtitle-text">Website Maintenance + 8 Posts + 4 Stories + DMs/Comments + Paid Ads Strategy</div>
                 </div>
               </div>
-              <div class="toggle-price-text">$108 <span>/month</span></div>
+              <div class="toggle-price-pill green">
+                <span class="price-amount-bold" style="color: #166534;">$108</span>
+                <span class="price-period-sub">Per Month</span>
+              </div>
             </div>
 
-            <!-- Toggle 3 (Info) -->
-            <div class="calc-toggle-item active" id="calcPkg3">
-              <div class="toggle-info-group">
-                <div class="checkbox-visual"><i class="fa-solid fa-check"></i></div>
-                <div>
-                  <div class="toggle-title-text">Paid Ads Media Budget (Funded by Client)</div>
-                  <div class="toggle-subtitle-text">Direct spend paid to Facebook/Google with 0% extra management fees</div>
-                </div>
+            <!-- Informative Ad Spend Callout Banner -->
+            <div class="calc-client-ad-banner">
+              <div class="ad-banner-icon"><i class="fa-solid fa-coins"></i></div>
+              <div class="ad-banner-body">
+                <div class="ad-banner-title">Direct Ad Media Spend (Client-Funded)</div>
+                <div class="ad-banner-desc">You choose your monthly ad spend (e.g. $100, $200, or $300) and pay directly to Facebook/Google with <strong>$0 extra agency fees</strong>.</div>
               </div>
-              <div class="toggle-price-text" style="color: #166534; font-size: 0.95rem;">Client Budget</div>
+              <div class="ad-banner-chip"><i class="fa-solid fa-shield-halved"></i> 100% Client Control</div>
             </div>
 
           </div>
@@ -748,16 +756,16 @@
             <div class="summary-stat-row">
               <div class="stat-label-muted">Initial Upfront Launch</div>
               <div class="stat-big-val" id="totalUpfront">$600</div>
-              <span style="font-size: 0.8rem; color: var(--text-muted);">One-time design, setup &amp; launch</span>
+              <span style="font-size: 0.8rem; color: var(--text-muted); display: block; margin-top: 0.25rem;">One-time design, setup &amp; launch</span>
             </div>
 
             <div class="summary-stat-row">
               <div class="stat-label-muted">Ongoing Monthly Retainer</div>
-              <div class="stat-big-val" id="totalMonthly" style="color: #10b981;">$108/mo</div>
-              <span style="font-size: 0.8rem; color: var(--text-muted);">All-inclusive maintenance, social &amp; ads</span>
+              <div class="stat-big-val" id="totalMonthly" style="color: #166534;">$108/mo</div>
+              <div class="stat-badge-tag"><i class="fa-solid fa-check"></i> All-Inclusive Maintenance, Social &amp; Ads</div>
             </div>
 
-            <a href="#acceptance" class="btn btn-primary" style="width: 100%;">
+            <a href="#acceptance" class="btn btn-primary" style="width: 100%; padding: 0.85rem 1.25rem; font-size: 0.95rem;">
               <i class="fa-solid fa-check-double"></i> Review &amp; Accept Proposal
             </a>
           </div>
@@ -910,13 +918,14 @@
             <form id="proposalAcceptanceForm">
               <div style="margin-bottom: 1.15rem;">
                 <label class="form-label-clean" for="clientSignInput">Authorized Representative Name</label>
-                <input type="text" id="clientSignInput" class="form-input-clean" value="Fareedsons Enterprises" required placeholder="Enter full authorized name">
+                <input type="text" id="clientSignInput" class="form-input-clean" value="" required placeholder="Type your full name (e.g. John Doe)">
               </div>
 
               <div style="margin-bottom: 1.15rem;">
                 <label class="form-label-clean">Live Digital Signature</label>
                 <div class="signature-pad-box">
-                  <div class="signature-font-display" id="signaturePreview">Fareedsons Enterprises</div>
+                  <div class="signature-font-display" id="signaturePreview" style="display: none;"></div>
+                  <span class="signature-empty-hint" id="signatureHint"><i class="fa-solid fa-pen-fancy"></i> Signature will appear here as you type your name...</span>
                 </div>
               </div>
 

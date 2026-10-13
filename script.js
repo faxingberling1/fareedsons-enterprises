@@ -1,17 +1,26 @@
 // Neo Gen Technologies - Proposal Interaction Logic for Fareedsons Enterprises
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Digital Signature Preview
+  // 1. Digital Signature Preview (Starts completely empty)
   const signInput = document.getElementById('clientSignInput');
   const signaturePreview = document.getElementById('signaturePreview');
+  const signatureHint = document.getElementById('signatureHint');
   
   if (signInput && signaturePreview) {
+    signaturePreview.textContent = '';
+    signaturePreview.style.display = 'none';
+    if (signatureHint) signatureHint.style.display = 'flex';
+
     signInput.addEventListener('input', (e) => {
       const val = e.target.value.trim();
       if (val) {
         signaturePreview.textContent = val;
+        signaturePreview.style.display = 'block';
+        if (signatureHint) signatureHint.style.display = 'none';
       } else {
-        signaturePreview.textContent = 'Fareedsons Enterprises';
+        signaturePreview.textContent = '';
+        signaturePreview.style.display = 'none';
+        if (signatureHint) signatureHint.style.display = 'flex';
       }
     });
   }
@@ -19,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Interactive Calculator / Package Selector
   const optPkg1 = document.getElementById('calcPkg1');
   const optPkg2 = document.getElementById('calcPkg2');
-  const optPkg3 = document.getElementById('calcPkg3');
 
   const upfrontDisplay = document.getElementById('totalUpfront');
   const monthlyDisplay = document.getElementById('totalMonthly');
@@ -68,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setupToggle(optPkg1);
   setupToggle(optPkg2);
-  setupToggle(optPkg3);
   updateCalculator();
 
   // 3. Print / PDF Button

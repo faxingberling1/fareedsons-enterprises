@@ -73,12 +73,20 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
+let currentPort = PORT;
+
+function startListening(portToTry) {
+  currentPort = portToTry;
+  server.listen(portToTry);
+}
+
+server.on('listening', () => {
+  const activePort = server.address().port;
   console.log('\n==================================================');
   console.log('   NEO GEN TECHNOLOGIES - DEV SERVER');
   console.log('   Proposal: Fareedsons Enterprises');
   console.log('==================================================');
-  console.log(`> Local:    http://localhost:${PORT}`);
+  console.log(`> Local:    http://localhost:${activePort}`);
   console.log(`> Root Dir: ${PUBLIC_DIR}`);
   console.log('==================================================');
   console.log('Press Ctrl + C to stop the server\n');
@@ -86,9 +94,12 @@ server.listen(PORT, () => {
 
 server.on('error', (err) => {
   if (err.code === 'EADDRINUSE') {
-    console.warn(`[!] Port ${PORT} is in use, retrying on port ${Number(PORT) + 1}...`);
-    server.listen(Number(PORT) + 1);
+    const nextPort = currentPort + 1;
+    console.warn(`[!] Port ${currentPort} is in use, retrying on port ${nextPort}...`);
+    startListening(nextPort);
   } else {
     console.error('Server error:', err);
   }
 });
+
+startListening(PORT);
