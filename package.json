@@ -1,0 +1,20 @@
+{
+  "name": "fareedsons-enterprises-proposal",
+  "version": "1.0.0",
+  "description": "Custom Next.js E-Commerce Website & Digital Marketing Proposal for Fareedsons Enterprises by Neo Gen Technologies",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "proposal",
+    "ecommerce",
+    "nextjs",
+    "neo-gen-technologies",
+    "fareedsons-enterprises"
+  ],
+  "author": "Neo Gen Technologies",
+  "license": "UNLICENSED",
+  "private": true
+}

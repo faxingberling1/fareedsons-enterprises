@@ -7,7 +7,13 @@ This repository contains the standalone, high-performance proposal website prepa
 
 ## 🚀 Live Review & Deployment (GitHub Pages)
 
-This project is built using semantic **HTML5**, **CSS3**, and modern vanilla **JavaScript** with zero build-step dependencies, making it directly deployable on **GitHub Pages**.
+This project is built using semantic **HTML5**, **CSS3**, and modern vanilla **JavaScript** with zero build-step dependencies, making it directly deployable on **GitHub Pages** or runnable locally with Node.js.
+
+### 💻 Running Locally:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ### To Deploy to GitHub Pages:
 1. Initialize/push this repository to your GitHub account:
