@@ -1,7 +1,7 @@
-# E-Commerce & Digital Marketing Proposal for Furqan
+# E-Commerce & Digital Marketing Proposal for Fareedsons Enterprises
 **Prepared by Neo Gen Technologies**
 
-This repository contains the standalone, high-performance proposal website prepared exclusively for **Furqan**.
+This repository contains the standalone, high-performance proposal website prepared exclusively for **Fareedsons Enterprises**.
 
 ---
 
@@ -14,7 +14,7 @@ This project is built using semantic **HTML5**, **CSS3**, and modern vanilla **J
    ```bash
    git init
    git add .
-   git commit -m "feat: complete Furqan proposal with Neo Gen Technologies branding"
+   git commit -m "feat: complete Fareedsons Enterprises proposal with Neo Gen Technologies branding"
    git branch -M main
    git remote add origin <your-github-repo-url>
    git push -u origin main

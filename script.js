@@ -1,4 +1,4 @@
-// Neo Gen Technologies - Proposal Interaction Logic for Furqan
+// Neo Gen Technologies - Proposal Interaction Logic for Fareedsons Enterprises
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Digital Signature Preview
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (val) {
         signaturePreview.textContent = val;
       } else {
-        signaturePreview.textContent = 'Furqan';
+        signaturePreview.textContent = 'Fareedsons Enterprises';
       }
     });
   }
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (acceptanceForm) {
     acceptanceForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const clientName = document.getElementById('clientSignInput').value.trim() || 'Furqan';
+      const clientName = document.getElementById('clientSignInput').value.trim() || 'Fareedsons Enterprises';
       const agreeChecked = document.getElementById('termsAgreeCheck').checked;
 
       if (!agreeChecked) {
