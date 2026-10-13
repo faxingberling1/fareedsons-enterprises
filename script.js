@@ -37,19 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
       monthly += 108;
     }
 
-    if (optPkg3 && optPkg3.classList.contains('selected')) {
-      hasAddon = true;
-    }
-
     if (upfrontDisplay) {
       upfrontDisplay.textContent = `$${upfront}`;
     }
 
     if (monthlyDisplay) {
-      if (hasAddon) {
-        monthlyDisplay.innerHTML = `$${monthly} <span style="font-size: 0.9rem; color: #00d2ff;">+ Custom Ads</span>`;
+      if (monthly > 0) {
+        monthlyDisplay.innerHTML = `$${monthly} <span style="font-size: 0.85rem; color: #34d399;">/mo (All-Inclusive)</span>`;
       } else {
-        monthlyDisplay.textContent = `$${monthly}/mo`;
+        monthlyDisplay.textContent = '$0/mo';
       }
     }
   }

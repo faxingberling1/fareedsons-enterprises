@@ -39,10 +39,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 - **Package 1: Custom Next.js Website Development & Social Media Setup** — `$600` One-Time Investment
   - Full custom Next.js storefront, catalog, cart, checkout, email integration, Cloudflare SSL/DNS, hosting deployment, and creation/optimization of up to 4 social media business pages.
-- **Package 2: Website Maintenance, Social Media Management & Community Engagement** — `$108/month` Ongoing
-  - Technical maintenance, content updates, basic feature additions, up to 8 static posts + 4 stories monthly, active comment/DM engagement, and monthly performance reviews.
-- **Package 3: Social Media Marketing & Paid Advertising** — Quoted Separately / As Agreed
-  - High-performance creative design, Meta/TikTok ad setup, split-testing, continuous budget optimization, and conversion analytics.
+- **Package 2 & 3: All-Inclusive Monthly Growth Retainer** — `$108/month` Ongoing
+  - **Website Maintenance:** Unified within social media management (technical health checks, content/price updates, minor feature additions).
+  - **Social Media Management:** Content planning, up to 8 static posts + 4 stories monthly, multi-platform publishing.
+  - **Community Engagement:** Daily audience comment and DM responses during business hours.
+  - **Social Media Marketing & Paid Ads (Package 3 - Included):** Ad creative design, targeting setup, A/B testing, and scaling optimization included at 0% additional management fee (media ad spend budget funded directly by Fareedsons Enterprises).
 
 ---
 
